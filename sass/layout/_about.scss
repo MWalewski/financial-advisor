@@ -1,0 +1,73 @@
+.about {
+  &__wrapper {
+    display: flex;
+    padding: 7rem 0;
+  }
+
+  &__text-box {
+    flex: 1;
+    padding: 0 3rem;
+    @include respond(tab-port) {
+      padding: 0 5rem;
+    }
+    @include respond(phone) {
+      padding: 0 1rem;
+    }
+  }
+
+  &__photo-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__heading-primary {
+    font-size: 4rem;
+    font-weight: 400;
+    color: $color-primary;
+    text-align: center;
+    margin-bottom: 1rem;
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
+    @include respond(phone) {
+      font-size: 3.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: $color-primary;
+    text-align: center;
+    margin-bottom: 2rem;
+    @include respond(tab-port) {
+      font-size: 5.25rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+  }
+  &__text {
+    line-height: 1.8;
+    margin-top: 4rem;
+    padding: 2rem;
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      text-align: justify;
+    }
+    @include respond(phone) {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+  &__img {
+    display: block;
+    width: 80%;
+  }
+}

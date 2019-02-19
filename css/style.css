@@ -58,7 +58,13 @@ body {
   background: linear-gradient(to bottom right, #003f69, #157a8c); }
   @media (max-width: 56.25em) {
     .btn-primary {
-      font-size: 2.6rem; } }
+      font-size: 2.8rem;
+      padding: 2rem 5rem;
+      -webkit-border-radius: 5rem;
+      border-radius: 5rem; } }
+  @media (max-width: 37.5em) {
+    .btn-primary {
+      font-size: 2.4rem; } }
   .btn-primary:hover {
     background: -webkit-gradient(linear, left top, right bottom, from(#157a8c), to(#003f69));
     background: -webkit-linear-gradient(top left, #157a8c, #003f69);
@@ -98,10 +104,22 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 1.5rem; }
+    @media (max-width: 56.25em) {
+      .navbar__content {
+        padding: 3rem; } }
+    @media (max-width: 37.5em) {
+      .navbar__content {
+        padding: 1.5rem; } }
   .navbar__logo {
     font-size: 2.8rem;
     font-weight: 300;
     color: #fff; }
+    @media (max-width: 56.25em) {
+      .navbar__logo {
+        font-size: 3.8rem; } }
+    @media (max-width: 37.5em) {
+      .navbar__logo {
+        font-size: 2.8rem; } }
   .navbar__menu-toggler {
     display: inline-block;
     position: absolute;
@@ -185,6 +203,9 @@ body {
     @media (max-width: 56.25em) {
       .navbar__nav {
         padding-bottom: 15rem; } }
+    @media (max-width: 900px) and (max-height: 450px) {
+      .navbar__nav {
+        padding-bottom: 4rem; } }
     .navbar__nav--show {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -206,6 +227,12 @@ body {
     -webkit-transition: all 0.3s ease-in-out 0.4s;
     -o-transition: all 0.3s ease-in-out 0.4s;
     transition: all 0.3s ease-in-out 0.4s; }
+    @media (max-width: 56.25em) {
+      .navbar__item {
+        font-size: 4.2rem; } }
+    @media (max-width: 37.5em) {
+      .navbar__item {
+        font-size: 3.2rem; } }
   .navbar__link, .navbar__link:link, .navbar__link:visited {
     color: #fff;
     text-decoration: none;
@@ -215,6 +242,92 @@ body {
     transition: all 0.3s ease-in-out; }
     .navbar__link:hover, .navbar__link:link:hover, .navbar__link:visited:hover {
       color: #003f69; }
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7rem 0; }
+
+.about__text-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 3rem; }
+  @media (max-width: 56.25em) {
+    .about__text-box {
+      padding: 0 5rem; } }
+  @media (max-width: 37.5em) {
+    .about__text-box {
+      padding: 0 1rem; } }
+
+.about__photo-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (max-width: 56.25em) {
+    .about__photo-box {
+      display: none; } }
+
+.about__heading-primary {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #106b87;
+  text-align: center;
+  margin-bottom: 1rem; }
+  @media (max-width: 56.25em) {
+    .about__heading-primary {
+      font-size: 6rem; } }
+  @media (max-width: 37.5em) {
+    .about__heading-primary {
+      font-size: 3.8rem;
+      margin-bottom: 2rem; } }
+
+.about__heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #106b87;
+  text-align: center;
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .about__heading-secondary {
+      font-size: 5.25rem; } }
+  @media (max-width: 37.5em) {
+    .about__heading-secondary {
+      font-size: 3rem;
+      margin-bottom: 4rem; } }
+
+.about__text {
+  line-height: 1.8;
+  margin-top: 4rem;
+  padding: 2rem; }
+  @media (max-width: 56.25em) {
+    .about__text {
+      font-size: 2.5rem;
+      text-align: justify; } }
+  @media (max-width: 37.5em) {
+    .about__text {
+      font-size: 2rem;
+      margin-bottom: 4rem; } }
+
+.about__img {
+  display: block;
+  width: 80%; }
 
 .showcase {
   height: 100vh;
@@ -238,12 +351,15 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (-o-min-device-pixel-ratio: 2/1) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem), (-o-min-device-pixel-ratio: 2/1) and (min-width: 37.5rem), (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125em) {
     .showcase {
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../img/large-hero.jpeg);
       background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg);
       background-image: -o-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg);
       background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg); } }
+  @media (max-width: 900px) and (max-height: 450px) {
+    .showcase {
+      height: 175vh; } }
   .showcase__text-content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -261,6 +377,9 @@ body {
     margin-top: 8rem; }
     @media (max-width: 56.25em) {
       .showcase__text-content {
+        width: 70rem; } }
+    @media (max-width: 37.5em) {
+      .showcase__text-content {
         padding: 0 2rem;
         margin-top: 4rem; } }
   .showcase__heading-primary {
@@ -269,6 +388,9 @@ body {
     margin: 0; }
     @media (max-width: 56.25em) {
       .showcase__heading-primary {
+        font-size: 9rem; } }
+    @media (max-width: 37.5em) {
+      .showcase__heading-primary {
         font-size: 4.8rem; } }
   .showcase__heading-secondary {
     font-size: 4.5rem;
@@ -276,7 +398,12 @@ body {
     margin: 0 0 2rem 0; }
     @media (max-width: 56.25em) {
       .showcase__heading-secondary {
-        font-size: 4.2rem; } }
+        font-size: 7rem;
+        margin: 0 0 5rem 0; } }
+    @media (max-width: 37.5em) {
+      .showcase__heading-secondary {
+        font-size: 4.2rem;
+        margin: 0 0 2rem 0; } }
   .showcase__text {
     display: block;
     font-size: 2.2rem;
@@ -284,4 +411,9 @@ body {
     margin: 4.5rem 0; }
     @media (max-width: 56.25em) {
       .showcase__text {
-        font-size: 2.4rem; } }
+        font-size: 3.4rem;
+        margin: 6.5rem 0; } }
+    @media (max-width: 37.5em) {
+      .showcase__text {
+        font-size: 2.4rem;
+        margin: 4.5rem 0; } }
