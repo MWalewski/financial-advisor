@@ -83,6 +83,23 @@ body {
     transform: translateY(-1px);
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn-primary--white {
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #fff;
+    background: transparent;
+    width: 20rem;
+    padding: 1rem 2.2rem; }
+    @media (max-width: 56.25em) {
+      .btn-primary--white {
+        margin-top: 8rem;
+        font-size: 2.6rem;
+        padding: 1.2rem 3rem;
+        width: 25rem; } }
+    .btn-primary--white:hover {
+      background: #fff;
+      color: #106b87; }
 
 .navbar {
   z-index: 11;
@@ -318,7 +335,7 @@ body {
   padding: 2rem; }
   @media (max-width: 56.25em) {
     .about__text {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       text-align: justify; } }
   @media (max-width: 37.5em) {
     .about__text {
@@ -328,6 +345,68 @@ body {
 .about__img {
   display: block;
   width: 80%; }
+
+.advice {
+  position: relative;
+  min-height: 35rem;
+  background: url("../../img/advice.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  @media (max-width: 56.25em) {
+    .advice {
+      min-height: 50rem; } }
+  @media (max-width: 37.5em) {
+    .advice {
+      min-height: 55rem; } }
+  .advice__dark-overlay {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 63, 105, 0.9);
+    padding: 6rem; }
+    @media (max-width: 56.25em) {
+      .advice__dark-overlay {
+        padding: 8rem; } }
+    @media (max-width: 37.5em) {
+      .advice__dark-overlay {
+        padding: 6rem 3rem; } }
+  .advice__heading {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem; }
+    @media (max-width: 56.25em) {
+      .advice__heading {
+        margin-bottom: 4rem; } }
+    @media (max-width: 37.5em) {
+      .advice__heading {
+        font-size: 3.3rem; } }
+    .advice__heading--small {
+      font-size: 2rem;
+      margin-bottom: 5rem; }
+      @media (max-width: 56.25em) {
+        .advice__heading--small {
+          font-size: 2.4rem;
+          margin-bottom: 4rem; } }
+      @media (max-width: 37.5em) {
+        .advice__heading--small {
+          font-size: 2.2rem; } }
+
+body {
+  height: 400vh; }
 
 .showcase {
   height: 100vh;
@@ -351,7 +430,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5rem), (-o-min-device-pixel-ratio: 2/1) and (min-width: 37.5rem), (min-resolution: 192dpi) and (min-width: 37.5rem), (min-width: 125em) {
+  @media (min-width: 37.5rem) {
     .showcase {
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../img/large-hero.jpeg);
       background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg);

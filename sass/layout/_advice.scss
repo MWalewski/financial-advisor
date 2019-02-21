@@ -1,0 +1,61 @@
+.advice {
+  position: relative;
+  min-height: 35rem;
+  background: url("../../img/advice.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    min-height: 50rem;
+  }
+  @include respond(phone) {
+    min-height: 55rem;
+  }
+
+  &__dark-overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-primary-dark, 0.9);
+    padding: 6rem;
+    @include respond(tab-port) {
+      padding: 8rem;
+    }
+    @include respond(phone) {
+      padding: 6rem 3rem;
+    }
+  }
+  &__heading {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 1.5rem;
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 3.3rem;
+    }
+    &--small {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      @include respond(tab-port) {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+      }
+      @include respond(phone) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+body {
+  height: 400vh;
+}

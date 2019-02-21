@@ -40,4 +40,24 @@
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
   }
+
+  &--white {
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid $color-white;
+    background: transparent;
+    width: 20rem;
+    padding: 1rem 2.2rem;
+    @include respond(tab-port) {
+      margin-top: 8rem;
+      font-size: 2.6rem;
+      padding: 1.2rem 3rem;
+      width: 25rem;
+    }
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+    }
+  }
 }
