@@ -4,3 +4,123 @@ body {
   font-size: $default-font-size;
   line-height: 1.4;
 }
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 300;
+  margin: 0;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
+  @include respond(tab-port) {
+    font-size: 9rem;
+  }
+  @include respond(phone) {
+    font-size: 4.8rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 7rem;
+    margin-bottom: 5rem;
+  }
+  @include respond(phone) {
+    font-size: 4.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.section-heading-large {
+  font-size: 4rem;
+  font-weight: 400;
+  color: $color-primary;
+  text-align: center;
+  margin-bottom: 1rem;
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
+  @include respond(phone) {
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+  }
+  &--white {
+    color: $color-white;
+  }
+  &--slim {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 3.3rem;
+    }
+  }
+}
+
+.section-heading-medium {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: $color-primary;
+  text-align: center;
+  margin-bottom: 2rem;
+  @include respond(tab-port) {
+    font-size: 5.25rem;
+  }
+  @include respond(phone) {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  &--white {
+    color: $color-white;
+  }
+  &--slim {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+      margin-bottom: 4rem;
+    }
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
+  }
+}
+.text-large {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 4.5rem 0;
+  @include respond(tab-port) {
+    font-size: 3.4rem;
+    margin: 6.5rem 0;
+  }
+  @include respond(phone) {
+    font-size: 2.4rem;
+    margin: 4.5rem 0;
+  }
+}
+
+.text {
+  line-height: 1.8;
+  margin-top: 4rem;
+  padding: 2rem;
+  @include respond(tab-port) {
+    font-size: 2.2rem;
+    text-align: justify;
+  }
+  @include respond(phone) {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}

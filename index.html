@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400&amp;subset=latin-ext"
       rel="stylesheet"
     />
@@ -40,9 +46,9 @@
 
     <header id="header" class="showcase">
       <div class="showcase__text-content">
-        <h1 class="showcase__heading-primary">Financial Advisor</h1>
-        <h3 class="showcase__heading-secondary">Jan Kowalski</h3>
-        <p class="showcase__text">
+        <h1 class="heading-primary">Financial Advisor</h1>
+        <h3 class="heading-secondary">Jan Kowalski</h3>
+        <p class="text-large">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, quam.
         </p>
         <a href="#" class="btn-primary">Find Out More</a>
@@ -50,13 +56,15 @@
     </header>
     <section id="about-section" class="about">
       <div class="container">
-        <div class="about__wrapper">
+        <div class="about__wrapper py-5">
           <div class="about__text-box">
-            <h2 class="about__heading-primary">
+            <h2 class="section-heading-large">
               Providing Customized Services
             </h2>
-            <h3 class="about__heading-secondary">For Discerning Clients</h3>
-            <p class="about__text">
+            <h3 class="section-heading-medium ">
+              For Discerning Clients
+            </h3>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
               voluptatem eligendi, eos, praesentium libero rerum ullam, quo
               magnam cupiditate aut repellendus tempore magni quia quas?
@@ -81,14 +89,75 @@
     <section id="advice-section" class="advice">
       <div class="advice__dark-overlay">
         <div class="container">
-          <h2 class="advice__heading">
+          <h2
+            class="section-heading-large section-heading-large--white section-heading-large--slim"
+          >
             We offer free financial advice at your convenience
           </h2>
-          <h4 class="advice__heading advice__heading--small">
-            We're here to help you plan your financial future, with free advice
-            and no fuss!
+          <h4
+            class=" section-heading-medium  section-heading-medium--white 
+          section-heading-medium--slim"
+          >
+            We're here to help you plan your financial future!
           </h4>
           <a href="#" class="btn-primary btn-primary--white">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-services" class="services py-5">
+      <div class="container">
+        <h2 class="section-heading-large ">
+          What We Offer
+        </h2>
+        <div class="services__cards-wrapper">
+          <div class="card">
+            <div class="card__icon">
+              <i class="fas fa-exchange-alt fa-3x"></i>
+            </div>
+            <div class="card__header">Transfers and consolidation</div>
+            <div class="card__header-small">
+              Already investing? Transfer to us
+            </div>
+            <div class="card__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              nisi obcaecati eius cupiditate quod quibusdam, voluptatum labore
+              architecto perferendis eos tenetur ratione iste ad, deleniti
+              aliquid tempore voluptatibus dolorem accusamus!
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <i class="fas fa-chart-line fa-3x"></i>
+            </div>
+            <div class="card__header">Choose your investments</div>
+            <div class="card__header-small">
+              Choose a diversified portfolio
+            </div>
+            <div class="card__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              nisi obcaecati eius cupiditate quod quibusdam, voluptatum labore
+              architecto perferendis eos tenetur ratione iste ad, deleniti
+              aliquid tempore voluptatibus dolorem accusamus!
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__icon">
+              <i class="fas fa-question-circle fa-3x"></i>
+            </div>
+            <div class="card__header">24/7 Financial Advice</div>
+            <div class="card__header-small">
+              Get free financial advice online
+            </div>
+            <div class="card__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              nisi obcaecati eius cupiditate quod quibusdam, voluptatum labore
+              architecto perferendis eos tenetur ratione iste ad, deleniti
+              aliquid tempore voluptatibus dolorem accusamus!
+            </div>
+          </div>
         </div>
       </div>
     </section>

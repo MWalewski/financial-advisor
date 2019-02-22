@@ -1,0 +1,24 @@
+.services {
+  @include respond(tab-land) {
+    padding: 4rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 1rem;
+  }
+  @include respond(phone) {
+    padding: 8rem 3rem;
+  }
+
+  &__cards-wrapper {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    @include respond(phone) {
+      margin-top: 8rem;
+    }
+  }
+}
