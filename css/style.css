@@ -537,8 +537,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 80vh;
-  padding: 02rem; }
+  height: 80vh; }
   @media (max-width: 75em) {
     .product {
       height: 65vh; } }
@@ -590,7 +589,8 @@ body {
   .product__icon-title {
     font-weight: 400;
     font-size: 1.6rem;
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0;
+    border-bottom: 3px transparent solid; }
     .product__icon-title--active {
       border-bottom: 3px solid #fff; }
     @media (max-width: 56.25em) {

@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   height: 80vh;
-  padding: 02rem;
 
   @include respond(tab-land) {
     height: 65vh;
@@ -40,6 +39,7 @@
   &__icon {
     color: $color-white;
     font-size: 2.2rem;
+
     @include respond(phone) {
       font-size: 1.8rem;
     }
@@ -49,6 +49,7 @@
     font-weight: 400;
     font-size: 1.6rem;
     padding: 0.5rem 0;
+    border-bottom: 3px transparent solid;
     &--active {
       border-bottom: 3px solid $color-white;
     }
