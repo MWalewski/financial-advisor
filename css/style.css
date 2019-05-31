@@ -438,8 +438,29 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-    .navbar__link:hover, .navbar__link:link:hover, .navbar__link:visited:hover {
-      color: #003f69; }
+    .navbar__link:after, .navbar__link:link:after, .navbar__link:visited:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 2px solid;
+      margin-top: 10px;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, -webkit-transform 0.35s;
+      -o-transition: opacity 0.35s, transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+      -webkit-transform: scale(0, 1);
+      -ms-transform: scale(0, 1);
+      transform: scale(0, 1); }
+    .navbar__link:hover:after, .navbar__link:link:hover:after, .navbar__link:visited:hover:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
 
 .about__wrapper {
   display: -webkit-box;
@@ -669,10 +690,10 @@ body {
 
 .showcase {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../img/hero.jpeg);
-  background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/hero.jpeg);
-  background-image: -o-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/hero.jpeg);
-  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/hero.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../img/hero.jpeg);
+  background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../img/hero.jpeg);
+  background-image: -o-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../img/hero.jpeg);
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../img/hero.jpeg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -691,10 +712,10 @@ body {
   align-items: center; }
   @media (min-width: 37.5rem) {
     .showcase {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../img/large-hero.jpeg);
-      background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg);
-      background-image: -o-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg);
-      background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../../img/large-hero.jpeg); } }
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../img/large-hero.jpeg);
+      background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../img/large-hero.jpeg);
+      background-image: -o-linear-gradient(top, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../img/large-hero.jpeg);
+      background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../img/large-hero.jpeg); } }
   @media (max-width: 900px) and (max-height: 450px) {
     .showcase {
       height: 175vh; } }
