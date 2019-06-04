@@ -208,13 +208,66 @@
       </div>
       </div>
     </section>
-    <section id="contact" class="contact py-5">
+    <section id="contact" class="contact ">
       <div class="container">
-        <h2 class="section-heading-large ">
-          Get In Touch
-        </h2>
+        
+          <h2 class="section-heading-large section-heading-large--white pt-1">
+              Contact Us
+            </h2>
+            <div class="contact-inner">
+            <div class="contact-form-wrapper">
+              <form class="contact-form">
+              <div class="contact-form__input-group-row">
+              <div class="contact-form__input-group">   
+                  <input type="text" placeholder="Name" name="name" class="contact-form__input">
+                </div>
+                <div class="contact-form__input-group">
+                    <input type="email" placeholder="Email" name="e-mail" class="contact-form__input">
+                  </div>
+                </div>
+                  <div class="contact-form__input-group-row">
+                <div class="contact-form__input-group contact-form__input-group--message">
+                    <textarea placeholder="Your message" name="message" class="contact-form__input"></textarea>
+                  </div>
+                </div>
+                <div class="contact-form__input-group-row contact-form__input-group-row--btn">
+                    <div class="contact-form__input-group">
+                        <input type="submit" value="Submit Message" class="contact-form__btn">
+                      </div>
+                    </div>
+            </form>
+            </div>
+          <div class="contact-box-wrapper ">
+          <div class="contact-box">
+            <div class="contact-box__icon-wrapper">
+                <i  class="fas fa-phone  contact-box__icon"></i>
+            </div>          
+            <div class="contact-box__content">+48 555-444-333</div>
+          </div>
+          <div class="contact-box">
+              <div class="contact-box__icon-wrapper">
+                  <i  class="fas fa-envelope-open-text  contact-box__icon"></i>
+              </div>
+              <div class="contact-box__content">john.doe@financial.com</div>
+            </div>
+            <div class="contact-box">
+                <div class="contact-box__icon-wrapper">
+                    <i  class="fas fa-map-marker-alt  contact-box__icon"></i>
+                </div>
+                <div class="contact-box__content"><p>Al.Grunwaldzka 88</p><p>80-888 Gdańsk</p></div>
+              </div>
+        </div>
+        
+        
       </div>
+    </div>
+    
     </section>
+    <div class="contact__map" id="map"></div>
+   
+    
     <script src="./scripts/index-bundled.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9uLVllFPO0Jq-E6q0KDqUrzToOOTsit0 &callback=initMap"
+    ></script>
   </body>
 </html>

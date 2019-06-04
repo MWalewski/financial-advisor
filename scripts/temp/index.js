@@ -50,3 +50,13 @@ box3.addEventListener("click", () => {
   title2.classList.remove("product__icon-title--active");
   title3.classList.add("product__icon-title--active");
 });
+
+/////GOOGLE MAPS
+
+var map;
+window.initMap = function() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 54.349358, lng: 18.650376 },
+    zoom: 15
+  });
+};

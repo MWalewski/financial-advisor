@@ -3,8 +3,21 @@
   margin: 0 auto;
 }
 
-//////PADDING
+.d-flex {
+  display: flex;
+}
 
+//////PADDING
+.py-3 {
+  padding: 4rem 0;
+}
+.py-4 {
+  padding: 6rem 0;
+}
 .py-5 {
   padding: 8rem 0;
+}
+
+.pt-1 {
+  padding-top: 3rem;
 }
