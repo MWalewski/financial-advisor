@@ -1,4 +1,5 @@
 .services {
+  background-color: $color-white;
   @include respond(tab-land) {
     padding: 4rem;
     margin-bottom: 6rem;
