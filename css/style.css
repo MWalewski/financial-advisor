@@ -705,6 +705,7 @@ body {
             .contact .contact-inner .contact-form-wrapper .contact-form__btn {
               font-size: 2rem; } }
           .contact .contact-inner .contact-form-wrapper .contact-form__btn:hover {
+            cursor: pointer;
             background-color: #fff;
             color: #003f69;
             -webkit-transform: translateY(-3px);

@@ -98,6 +98,7 @@
             font-size: 2rem;
           }
           &:hover {
+            cursor: pointer;
             background-color: $color-white;
             color: $color-primary-dark;
             transform: translateY(-3px);
