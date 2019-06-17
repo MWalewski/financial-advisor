@@ -7,6 +7,14 @@
     url(../img/contact.jpg);
   background-size: cover;
   background-position: center;
+  @media (min-width: 37.5rem) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(#000, 0.9),
+        rgba($color-primary-dark, 0.9)
+      ),
+      url(../img/contact-large.jpg);
+  }
   .contact-inner {
     display: grid;
     grid-template-areas: "contact-form contact-form contact-form  contact-form contact-box";

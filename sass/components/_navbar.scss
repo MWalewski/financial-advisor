@@ -24,6 +24,14 @@
     font-size: 2.8rem;
     font-weight: 300;
     color: $color-white;
+    a.link {
+      &:link,
+      &:visited {
+        color: $color-white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
     @include respond(tab-port) {
       font-size: 3.8rem;
     }

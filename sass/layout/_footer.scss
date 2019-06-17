@@ -1,0 +1,29 @@
+.main-footer {
+  background-color: $color-dark;
+  color: $color-grey;
+  text-align: center;
+  font-size: 1.6rem;
+
+  &__copyrights {
+    display: inline-block;
+  }
+
+  &__icons-wrapper {
+    float: right;
+  }
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &__icon {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+}
